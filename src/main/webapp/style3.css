@@ -1,0 +1,242 @@
+@charset "UTF-8";
+body{
+    max-width: 100%;
+    background-image: url("biblioteka2.jpg");
+    font-family: “Comic Sans MS”, “Comic Sans”,  cursive;
+}
+#kontener{
+ max-width: 100%; 
+ min-width: 950px;
+/* background: #FFFFFF;*/
+    margin: 0 auto;   
+    text-align: left; 
+}
+
+#left{
+float:left;
+   width:215px;
+   height:100%;
+   font-size:15px;
+}
+
+#right{
+margin-left:1px;
+   width: 100%-250px;
+min-width: 750px;
+   height:100%;
+   padding-bottom:20px;
+   padding-left:50px;
+}
+.header {
+  padding: 20px 100px 20px 20px;
+float: right;
+width: 80%;
+min-width: 750px;
+  text-align: center;
+/*  background: #68deca;*/
+  color: white;
+  font-size: 30px;
+}
+.mainContent {
+float: right;
+color: white;
+/*  background-color: #fffafb;*/
+/*  padding-left: 200px;
+padding-right: 20px;*/
+ width: 80%;
+min-width: 600px;
+margin-left:1px;
+margin-right:50px;
+padding-bottom:20px;
+background: rgba(0,0,0,0.3);
+  border: 1px solid black;
+}
+.mainContent p, .mainContent h1,.mainContent h2,.mainContent h3,.mainContent h4{
+padding-left: 2%;
+margin-left: 20px;
+padding-right: 20px;
+margin-right:20px;
+color: white;
+}
+.adres{
+padding-left: 3%;
+margin-left: 20px;
+padding-right: 20px;
+margin-right:20px;
+color: white;
+}
+footer {
+	text-align: center;
+  margin-left:250px;
+  width: 80%;
+  min-width: 600px;
+  bottom: 0;
+position: fixed;
+	height: 35px;
+
+}
+#footer p {
+		margin:0;
+		padding:7px;
+	}
+
+
+
+/*menu*/
+
+nav ul  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 215px;
+   border: 1px solid black;
+/*  opacity: 0.6;*/
+background: rgba(0,0,0,0.6);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+nav li a.active {
+  background-color: #dda15e;
+  color: white;
+}
+
+nav li a:hover:not(.active) {
+  background-color: #dda15e;
+  color: white;
+}
+
+
+nav li a, menu.dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 40px;
+  text-decoration: none;
+}
+
+/*formularz*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],input[type=password],input[type=number],input[type=date], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #dda15e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #dda15e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 8px 40px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #bc6c25;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #7f5539;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+  padding: 30px;
+   border: 5px solid #36241c;
+  color: white;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: brown;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/*tabela*/
+#tabela {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tabela td, #tabela th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tabela tr:nth-child(even){background: rgba(255,255,255,0.3);}
+
+#tabela tr:hover {background-color: #dda15e;}
+
+#tabela th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #dda15e;
+  color: white;
+}
+#tabela td, #tabela tr{
+  color: white;
+}
+
